@@ -7,8 +7,8 @@ datasource db {
 }
 
 generator client {
-  provider = "prisma-client-js"
-  //previewFeatures = ["mongodb"]
+  provider        = "prisma-client-js"
+  previewFeatures = ["mongodb"]
 }
 
 model Post {
