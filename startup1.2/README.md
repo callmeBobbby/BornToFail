@@ -25,3 +25,16 @@ If you are developing a production application, we recommend updating the config
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+# steps to setup prisma with vite project
+
+#1 npm create vite@latest my-vue-app -- --template react-ts
+#2 create a mongodb cluster/ my sql database
+#3 npm init -y
+#4 npm install prisma typescript ts-node @types/node --save-dev
+#5 npx tsc --init
+#6 npx prisma
+#7 npx prisma init
+#8 now add the database connection string url to the .env file and make sure to add at last the database name you want to set.
+#9 create data model for you database in schema.prisma file
+#10 now create a server.js /server.ts {ts extension was causing some issue} to perform crud opeartion on database.
