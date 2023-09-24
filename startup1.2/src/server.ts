@@ -12,6 +12,8 @@ async function main() {
             },
         });
 
+       
+        console.log(user);
         // Create a new post associated with the user
         const post = await prisma.post.create({
             data: {
